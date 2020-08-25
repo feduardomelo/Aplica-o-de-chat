@@ -32,4 +32,4 @@ io.on('connection', socket => {
 //socket emit -manda msg
 //socket on - ouve msg
 //socket broadcast.emit - ele envia para todos os sockets conectados na aplicação
-server.listen(3000)
+server.listen(process.env.PORT || 3000)
